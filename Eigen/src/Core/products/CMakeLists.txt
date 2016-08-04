@@ -1,6 +1,3 @@
-FILE(GLOB Eigen_Core_Product_SRCS "*.h")
-
-INSTALL(FILES
-  ${Eigen_Core_Product_SRCS}
-  DESTINATION ${INCLUDE_INSTALL_DIR}/Eigen/src/Core/products COMPONENT Devel
-  )
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ce52d66e3753088e35d259bbbd72ffcf943690d960bba8bea037520e4636162
+size 166

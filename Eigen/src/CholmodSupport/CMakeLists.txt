@@ -1,6 +1,3 @@
-FILE(GLOB Eigen_CholmodSupport_SRCS "*.h")
-
-INSTALL(FILES 
-  ${Eigen_CholmodSupport_SRCS}
-  DESTINATION ${INCLUDE_INSTALL_DIR}/Eigen/src/CholmodSupport COMPONENT Devel
-  )
+version https://git-lfs.github.com/spec/v1
+oid sha256:092799c2693794ba318e683c68c79c76f445eaaf39996fd269ad86402e236641
+size 172

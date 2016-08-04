@@ -1,19 +1,3 @@
-include(RegexUtils)
-test_escape_string_as_regex()
-
-file(GLOB Eigen_directory_files "*")
-
-escape_string_as_regex(ESCAPED_CMAKE_CURRENT_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
-
-foreach(f ${Eigen_directory_files})
-  if(NOT f MATCHES "\\.txt" AND NOT f MATCHES "${ESCAPED_CMAKE_CURRENT_SOURCE_DIR}/[.].+" AND NOT f MATCHES "${ESCAPED_CMAKE_CURRENT_SOURCE_DIR}/src")
-    list(APPEND Eigen_directory_files_to_install ${f})
-  endif()
-endforeach(f ${Eigen_directory_files})
-
-install(FILES
-  ${Eigen_directory_files_to_install}
-  DESTINATION ${INCLUDE_INSTALL_DIR}/Eigen COMPONENT Devel
-  )
-
-add_subdirectory(src)
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c463a5095ac6472752fd8de4c4af111ada4d2f0ada526bc198d6d1e7a6c98fa
+size 607
