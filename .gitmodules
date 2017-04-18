@@ -1,0 +1,3 @@
+[submodule "fastica"]
+	path = fastica
+	url = ./fastica/
